@@ -16,69 +16,6 @@ body {
   text-align: center;
 }
 
-.page-header {
-  position: relative;
-}
-
-/* .page-header__wrapper {
-  display: flex;
-  justify-content: space-between;
-
-  max-width: 1200px;
-  margin: 0 auto;
-} */
-
-/* .main-nav__list {
-  display: flex;
-  font-size: 20px;
-
-  margin: 0;
-  margin-left: 160px;
-  padding: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  list-style: none;
-}
-
-.main-nav__item {
-  margin-right: 30px;
-}
-
-.main-nav__item--last {
-  margin-right: 0;
-} */
-
-.page-header__language {
-  position: absolute;
-  top: 30px;
-  right: 60px;
-  /* margin-right: 30px;
-  padding-top: 30px; */
-}
-
-.page-header__link {
-  font-size: 24px;
-  color: #455d58;
-
-  margin: 0;
-  padding: 0;
-
-  text-decoration: none;
-}
-
-.page-header__link:hover {
-  color: #b38d88;
-}
-
-.page-header__link:active {
-  color: #cc9293;
-}
-
-.page-header__link--active {
-  font-style: italic;
-}
-
 .introduction {
   padding-top: 130px;
   margin-bottom: 130px;
@@ -105,6 +42,7 @@ body {
   margin-left: 20px;
 }
 
+.projects,
 .technologies,
 .education,
 .profiles,
@@ -114,11 +52,24 @@ body {
   margin-bottom: 100px;
 }
 
+.projects__list,
 .technologies__list,
+.contacts__list,
 .education__list,
-.profiles__list,
-.contacts__list {
+.profiles__list {
   width: 560px;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+  list-style: none;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(235, 220, 218, 1);
+}
+
+.projects__list {
+  width: 1170px;
 }
 
 .education,
@@ -131,44 +82,19 @@ body {
   font-weight: normal;
 
   margin-bottom: 60px;
+  text-align: center;
 }
 
-.technologies__list,
-.contacts__list,
-.education__list,
-.profiles__list {
-  margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
-
-  list-style: none;
-  border-radius: 30px;
-  box-shadow: 0 0 20px rgba(235, 220, 218, 1);
-}
-
+.projects__list:hover,
 .technologies__list:hover,
 .contacts__list:hover,
 .education__list:hover,
 .profiles__list:hover {
-  /* background: #fff1f0; */
-  /* background: #faf0e6; */
   background: #fdf5e6;
   transition: 1s;
-
 }
 
-.technologies__list,
-.education__list {
-  /* min-height: 480px;
-  padding-bottom: 15px; */
-}
-
-.contacts__list,
-.profiles__list {
-  /* min-height: 140px; */
-}
-
+.projects__item,
 .technologies__item,
 .education__item,
 .profiles__item,
@@ -185,6 +111,7 @@ body {
   list-style: none;
 }
 
+.projects__link,
 .education__link,
 .education__link-courses,
 .profiles__link,
@@ -194,6 +121,7 @@ body {
   border-bottom: 2px solid #ebdcda;
 }
 
+.projects__link:hover,
 .education__link:hover,
 .education__link-courses:hover,
 .profiles__link:hover,
@@ -201,6 +129,7 @@ body {
   color: #b38d88;
 }
 
+.projects__link:active,
 .education__link:active,
 .education__link-courses:active,
 .profiles__link:active,
@@ -220,7 +149,3 @@ body {
   margin-right: 20px;
   line-height: 26px;
 }
-
-/* .profiles__item {
-  padding-bottom: 90px;
-} */
