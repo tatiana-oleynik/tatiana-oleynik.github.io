@@ -17,8 +17,8 @@ body {
 }
 
 .introduction {
-  padding-top: 130px;
-  margin-bottom: 130px;
+  padding-top: 100px;
+  margin-bottom: 100px;
 }
 
 .introduction__name {
@@ -52,6 +52,11 @@ body {
   margin-bottom: 100px;
 }
 
+.education,
+.contacts {
+  margin-right: 0;
+}
+
 .projects__list,
 .technologies__list,
 .contacts__list,
@@ -70,11 +75,6 @@ body {
 
 .projects__list {
   width: 1170px;
-}
-
-.education,
-.contacts {
-  margin-right: 0;
 }
 
 .title {
@@ -106,6 +106,13 @@ body {
   text-align: left;
 }
 
+.projects__item {
+  font-weight: normal;
+  margin-right: 60px;
+  margin-bottom: 30px;
+  line-height: 26px;
+}
+
 .education__list-courses {
   margin-top: 60px;
   list-style: none;
@@ -119,6 +126,10 @@ body {
   color: #455d58;
   text-decoration: none;
   border-bottom: 2px solid #ebdcda;
+}
+
+.projects__link {
+  font-weight: bold;
 }
 
 .projects__link:hover,
