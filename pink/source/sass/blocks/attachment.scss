@@ -1,0 +1,121 @@
+.attachment {
+  @include indents;
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 2px;
+  margin-bottom: 32px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 14px;
+    margin-bottom: 51px;
+
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 15px;
+  }
+}
+
+.attachment__title {
+  @include indents;
+  padding-top: 40px;
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d22856;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 396px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 51px;
+  }
+}
+
+.attachment__signature {
+  @include indents;
+  position: relative;
+  display: flex;
+
+  margin-bottom: 45px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.attachment__field {
+  @include indents;
+  width: 37px;
+  height: 36px;
+}
+
+.attachment__signature::after {
+  content: "";
+
+  position: absolute;
+  top: -4px;
+
+  width: 37px;
+  height: 36px;
+
+  border-radius: 50%;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.attachment__signature:hover::after {
+  border-color: #283645;
+}
+
+.attachment__signature:active::after {
+  border-color: #d22856;
+}
+
+.attachment__circle {
+  position: absolute;
+  z-index: 10;
+  top: 8px;
+  left: 13px;
+
+  display: none;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+  background-color: #d22856;
+}
+
+.attachment__text {
+  padding-left: 69px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}

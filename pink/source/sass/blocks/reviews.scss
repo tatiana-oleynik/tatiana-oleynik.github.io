@@ -1,0 +1,150 @@
+.reviews__item {
+  @include indents;
+  display: none;
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.reviews__author-name {
+  @include indents;
+  display: block;
+  margin-bottom: 13px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-bottom: 2px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+}
+
+.reviews__text {
+  @include indents;
+  margin-bottom: 32px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #283645;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 35px;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    padding-top: 163px;
+    padding-left: 124px;
+    margin-bottom: 37px;
+  }
+}
+
+.reviews__personal-data {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include indents;
+    order: 3;
+    display: block;
+    margin-bottom: 34px;
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+
+.reviews__quotes {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    position: relative;
+  }
+
+  .reviews__quotes {
+    position: absolute;
+    top: 74px;
+    left: 47%;
+
+    display: block;
+
+    width: 79px;
+    height: 64px;
+
+    fill: #efefef;
+  }
+}
+
+.reviews__control-left,
+.reviews__control-right {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: block;
+  }
+}
+
+.reviews__arrow-left,
+.reviews__arrow-right {
+  position: absolute;
+
+  width: 22px;
+  height: 41px;
+
+  fill: #bec2c7;
+}
+
+.reviews__arrow-left {
+  top: 216px;
+}
+
+.reviews__arrow-right {
+  top: -185px;
+  left: 918px;
+}
+
+.reviews__arrow-left:hover,
+.reviews__arrow-right:hover {
+  fill: rgba(40, 54, 69, 0.6);
+}
+
+.reviews__arrow-left:active,
+.reviews__arrow-right:active {
+  fill: rgba(40, 54, 69, 0.1);
+}
+
+.reviews__wrapper {
+  padding-top: 43px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+}

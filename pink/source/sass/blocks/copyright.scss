@@ -1,0 +1,87 @@
+.copyright {
+  position: relative;
+}
+
+.copyright__text {
+  position: absolute;
+  left: -78px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #283645;
+
+  @media (min-width: $tablet-width) {
+    top: 38px;
+    left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 76px;
+    left: 214px;
+
+    font-size: 18px;
+  }
+
+  &--photo {
+    @media (min-width: $desktop-width) {
+      left: 210px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      left: 210px;
+    }
+  }
+}
+
+.copyright__link {
+  @include indents;
+  position: relative;
+}
+
+.copyright__link svg {
+  position: absolute;
+  top: -6px;
+  left: 25px;
+
+  width: 27px;
+  height: 34px;
+
+  fill: #d22856;
+
+  @media (min-width: $tablet-width) {
+    top: -18px;
+    left: 179px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -28px;
+    left: 340px;
+  }
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+}
+
+.copyright__link--photo svg {
+  @media (min-width: $desktop-width) {
+    left: 337px;
+  }
+}
+
+.copyright__link--form svg {
+  @media (min-width: $desktop-width) {
+    left: 336px;
+  }
+}
+
+.copyright__logo-htmlacademy {
+  fill: #d22856;
+}

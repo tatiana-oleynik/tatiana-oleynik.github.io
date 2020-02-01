@@ -1,0 +1,244 @@
+.competition__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.competition__info {
+  @include indents;
+  padding-top: 44px;
+  margin-bottom: 34px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    padding-top: 92px;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 765px;
+    margin-bottom: 70px;
+    padding-top: 94px;
+  }
+}
+
+.competition__deal {
+  @include indents;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.competition__signature {
+  margin-left: 21px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #d22856;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
+}
+
+.competition__field {
+  width: 277px;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 17px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+
+    &--surname {
+      min-width: 521px;
+    }
+
+    &--name {
+      min-width: 561px;
+    }
+
+    &--patronymic {
+      min-width: 521px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 19px;
+
+    &--surname {
+      min-width: 336px;
+    }
+
+    &--name {
+      min-width: 377px;
+    }
+
+    &--patronymic {
+      min-width: 335px;
+    }
+  }
+}
+
+.competition__field:hover {
+  border-color: #283645;
+}
+
+.competition__field:active {
+  border-color: #d22856;
+}
+
+.competition__item {
+  @include indents;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 2px;
+  }
+
+  &--last {
+    margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.competition__progress-color,
+.competition__attachment--wrapper {
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+}
+
+.competition__attachment--wrapper {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.competition__progress-color {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.competition__footnote {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #283645;
+
+  @media (min-width: $tablet-width) {
+    @include indents;
+    margin-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 5px;
+  }
+}
+
+.competition__star {
+  color: #d22856;
+}
+
+.competition__grid {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.competition__grid button {
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
+  }
+}
+
+.competition__full-name {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include indents;
+    width: 445px;
+    margin-right: 49px;
+    margin-top: 10px;
+  }
+}
+
+.competition__contacts {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 0;
+  }
+}
+
+.competition__impressions-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.competition__filling {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}

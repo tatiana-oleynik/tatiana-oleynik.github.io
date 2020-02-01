@@ -1,0 +1,11 @@
+.caption-photo {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #283645;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}

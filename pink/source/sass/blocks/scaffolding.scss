@@ -1,0 +1,65 @@
+body {
+  @include indents;
+  min-width: 320px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #283645;
+  font-style: normal;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder {
+  padding-left: 21px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+}
+
+input[type="checkbox"]:checked ~ .progress__checkbox-on {
+  display: block;
+}
+
+input[type="checkbox"]:focus + span {
+  outline: 1px solid #283645;
+}
+
+input[type="radio"]:checked ~ .attachment__circle {
+  display: block;
+}
+
+input[type="radio"]:focus + .attachment__text {
+  outline: 1px solid #283645;
+}
+
+textarea::placeholder {
+  padding-top: 12px;
+  padding-left: 17px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+}

@@ -1,0 +1,53 @@
+.button {
+  width: 280px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 2px;
+  background-color: #2aab6d;
+
+  &--error {
+    margin-bottom: 47px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 47px;
+    }
+  }
+
+  &--success {
+    margin-top: 48px;
+    margin-bottom: 53px;
+
+    @media (min-width: $desktop-width) {
+      width: 462px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.button:hover {
+  background-color: #1c9b5e;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #1c9b5e;
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+}

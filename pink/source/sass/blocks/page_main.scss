@@ -1,0 +1,56 @@
+.page-main {
+  position: relative;
+}
+
+.page-main__title {
+  @include indents;
+
+  position: absolute;
+  top: -142px;
+  left: 24%;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    top: -257px;
+
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -218px;
+    left: 35%;
+
+    line-height: 59px;
+  }
+
+  &--form {
+    top: -142px;
+    left: 45px;
+
+    width: 230px;
+
+    @media (min-width: $tablet-width) {
+      top: -257px;
+      left: 92px;
+
+      width: 475px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -218px;
+      left: 207px;
+
+      width: 750px;
+    }
+  }
+}
+
+.page-main__fill-title {
+  background-color: #283645;
+}

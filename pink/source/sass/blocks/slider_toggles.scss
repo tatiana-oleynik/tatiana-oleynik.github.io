@@ -1,0 +1,48 @@
+.slider__toggles {
+  @include indents;
+
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.slider__toggle {
+  @include indents;
+
+  display: block;
+
+  width: 6px;
+  height: 6px;
+  margin-right: 13px;
+  margin-top: 3px;
+
+  background-color: #bec2c7;
+  border-radius: 50%;
+
+  &--active {
+    width: 6px;
+    height: 6px;
+    margin-top: 0;
+    margin-right: 17px;
+
+    background-color: #ffffff;
+    border: 3px solid #283645;
+  }
+
+  &:hover {
+    background-color: #283645;
+  }
+
+  &:active {
+    background-color: rgba(190, 194, 199, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

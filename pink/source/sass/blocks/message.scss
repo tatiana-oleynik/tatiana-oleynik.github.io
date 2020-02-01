@@ -1,0 +1,131 @@
+.message {
+  display: none;
+
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+.message__title {
+  @include indents;
+  margin-bottom: 35px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+
+  &--error {
+    padding-top: 44px;
+
+    @media (min-width: $tablet-width) {
+      width: 217px;
+      margin-left: 123px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 335px;
+      padding-top: 50px;
+      margin-left: 223px;
+    }
+  }
+
+  &--success {
+    padding-top: 47px;
+
+    @media (min-width: $tablet-width) {
+      width: 202px;
+      margin-left: 130px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      margin-left: 193px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.message__hint {
+  @include indents;
+  margin-bottom: 38px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: #283645;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  &--error {
+    @media (min-width: $tablet-width) {
+      width: 298px;
+      margin-left: 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 352px;
+      margin-left: 217px;
+      margin-bottom: 62px;
+    }
+  }
+
+  &--success {
+    @media (min-width: $tablet-width) {
+      width: 325px;
+      margin-left: 81px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 380px;
+      margin-left: 202px;
+    }
+  }
+}
+
+.message__envelope-error-color {
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.message__envelope-error {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.message__envelope-success {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 462px;
+  }
+}
+
+.message__envelope-success-color {
+  background-color: #f2f2f2;
+}

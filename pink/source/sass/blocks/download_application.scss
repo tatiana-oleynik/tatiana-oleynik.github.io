@@ -1,0 +1,147 @@
+.download-application {
+  background-color: #1d2631;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -621px;
+
+    width: 340px;
+
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -734px;
+
+    width: 320px;
+    margin-left: 104px;
+    padding-top: 49px;
+
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.download-application__title {
+  @include indents;
+  display: none;
+
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 300;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 63px;
+    padding-left: 5px;
+    margin-bottom: 25px;
+
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.download-application__button {
+  @include indents;
+  display: block;
+
+  margin-bottom: 34px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+
+    font-size: 21px;
+  }
+}
+
+.download-application__list {
+  @include indents;
+  display: flex;
+  width: 210px;
+
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding-left: 3px;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.download-application__item {
+  @include indents;
+  margin-right: 35px;
+
+  &--last {
+    padding-top: 3px;
+    margin-right: 0;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 6px;
+    }
+  }
+
+  &--indent {
+    margin-top: 8px;
+  }
+}
+
+.download-application__link {
+  @include indents;
+}
+
+.download-application__info {
+  @include indents;
+  padding-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-bottom: 110px;
+  }
+}

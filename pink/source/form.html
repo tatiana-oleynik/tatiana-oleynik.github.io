@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header page-header--internal">
+      <div class="page-header__wrapper">
+        <div class="page-header__wrapper-top">
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo-link">
+              <svg class="page-header__logo-pink-white-mobile" width="75" height="22"><use xlink:href="#logo-pink-white-mobile"></use></svg>
+              <svg class="page-header__logo-pink-white-tablet" width="147" height="40"><use xlink:href="#logo-pink-white-tablet"></use></svg>
+              <svg class="page-header__logo-pink-white-desktop" width="147" height="40"><use xlink:href="#logo-pink-white-desktop"></use></svg>
+            </a>
+          </div>
+          <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <svg class="main-nav__icon-burger" width="50" height="24"><use xlink:href="#icon-menu-burger"></use></svg>
+              <svg class="main-nav__icon-cross" width="24" height="23"><use xlink:href="#icon-menu-cross"></use></svg>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link main-nav__link--active" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item main-nav__item--last">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="page-main__fill-title">
+        <div class="wrapper">
+          <h1 class="page-main__title page-main__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </div>
+      <section class="competition">
+        <div class="wrapper">
+          <p class="competition__info">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="competition__deal">Пожалуйста, заполните форму ниже:</span>
+          </p>
+        </div>
+        <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="competition__full-name wrapper">
+            <p class="competition__item">
+              <label class="competition__signature" for="surname-user">Фамилия:</label>
+              <input class="competition__field competition__field--surname" id="surname-user" type="text" name="surname" placeholder="Укажите фамилию *" required>
+            </p>
+            <p class="competition__item">
+              <label class="competition__signature" for="name-user">Имя:</label>
+              <input class="competition__field competition__field--name" id="name-user" type="text" name="name" placeholder="Введите ваше имя *" required>
+            </p>
+            <p class="competition__item competition__item--last">
+              <label class="competition__signature" for="patronymic-user">Отчество:</label>
+              <input class="competition__field competition__field--patronymic" id="patronymic-user" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+            </p>
+          </div>
+          <div class="competition__progress-color">
+            <div class="wrapper wrapper--progress">
+              <fieldset class="competition__progress progress">
+                <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
+                <div class="progress__wrapper">
+                  <label class="progress__signature progress__signature--shark">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress" checked="">
+                    <span>Сделал селфи с акулой</span>
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                  </label>
+                  <label class="progress__signature progress__signature--beach">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress" checked="">
+                    <span>Обгорел на пляже</span>
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                  </label>
+                  <label class="progress__signature progress__signature--chuck">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress">
+                    <span>Видел Чака Норриса</span>
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                  </label>
+                  <label class="progress__signature progress__signature--souvenir">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress">
+                    <span>Накупил сувениров</span>
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                  </label>
+                  <label class="progress__signature progress__signature--tower">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress" checked="">
+                    <span>Удержал башню</span>
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                  </label>
+                  <label class="progress__signature progress__signature--hotel">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress">
+                    <span>Разгромил отель</span>
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="competition__contacts wrapper">
+            <fieldset class="competition__contacts-user contacts-user">
+              <legend class="contacts-user__title">Контактная информация</legend>
+              <ul class="contacts-user__list">
+                <li class="contacts-user__item contacts-user__item--top">
+                  <label class="contacts-user__signature" for="tel-user">Номер телефона</label>
+                  <input class="contacts-user__field" id="tel-user" type="tel" name="telephone" placeholder="Номер, пожалуйста">
+                  <svg  class="contacts-user__tel"width="20" height="19"><use xlink:href="#icon-phone"></use></svg>
+                </li>
+                <li class="contacts-user__item contacts-user__item--last">
+                  <label class="contacts-user__signature" for="email-user">Адрес почты</label>
+                  <input class="contacts-user__field" id="email-user" type="email" name="email" placeholder="Введите почту *" required>
+                  <svg class="contacts-user__mail" width="20" height="19"><use xlink:href="#icon-mail"></use></svg>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="competition__attachment--wrapper">
+            <div class="wrapper">
+              <fieldset class="competition__attachment attachment">
+                <legend class="attachment__title">С каким приложением путешествовали?</legend>
+                <label class="attachment__signature">
+                  <input class="attachment__field visually-hidden" type="radio" name="attachment" value="Pink для iOS" checked="">
+                  <span class="attachment__text">Pink для iOS</span>
+                  <span class="attachment__circle"></span>
+                </label>
+                <label class="attachment__signature">
+                  <input class="attachment__field visually-hidden" type="radio" name="attachment" value="Pink на Android">
+                  <span class="attachment__text">Pink на Android</span>
+                  <span class="attachment__circle"></span>
+                </label>
+                <label class="attachment__signature">
+                  <input class="attachment__field visually-hidden" type="radio" name="attachment" value="Windows Phone">
+                  <span class="attachment__text">Windows Phone</span>
+                  <span class="attachment__circle"></span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+          <div class="competition__impressions-wrapper wrapper">
+            <fieldset class="competition__impressions impressions">
+              <legend class="impressions__title">Опишите свои эмоции</legend>
+              <textarea class="impressions__area" name="impressions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <div class="competition__grid">
+              <button class="button" type="submit" value="Отправить форму">Отправить форму</button>
+              <p class="competition__footnote">
+                <sup class="competition__star">*</sup> — обязательные <span class="competition__filling">для заполнения</span> поля
+              </p>
+            </div>
+          </div>
+        </form>
+      </section>
+      <div class="wrapper__message">
+        <div class="message message--error-opened message--error-closed">
+          <h2 class="message__title message__title--error">Что-то пошло не так!</h2>
+          <p class="message__hint message__hint--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <div class="message__envelope-error-color">
+            <div class="message__envelope-error">
+              <button class="button button--error" type="button" value="Ok">Ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper__message">
+        <div class="message message--success-opened message--success-closed">
+          <h2 class="message__title message__title--success">Ваша заявка отправлена</h2>
+          <p class="message__hint message__hint--success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          <div class="message__envelope-success-color">
+            <div class="message__envelope-success">
+              <button class="button button--success" type="button" value="Закрыть окно">Закрыть окно</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="wrapper">
+      <footer class="page-footer">
+        <a class="page-footer__logo-link" href="index.html">
+          <svg class="page-header__logo-pink-blue-mobile" width="147" height="40"><use xlink:href="#logo-pink-blue-mobile"></use></svg>
+          <svg class="page-header__logo-pink-blue-desktop" width="147" height="40"><use xlink:href="#logo-pink-blue-desktop"></use></svg>
+        </a>
+        <ul class="page-footer__social social-list social-list--form">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Twitter</span>
+              <svg class="social-list__picture social-list__picture--twitter" width="18" height="14"><use xlink:href="#icon-twitter"></use></svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Facebook</span>
+              <svg class="social-list__picture social-list__picture--facebook" width="9" height="18"><use xlink:href="#icon-facebook"></use></svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">YouTube</span>
+              <svg class="social-list__picture social-list__picture--youtube" width="15" height="13"><use xlink:href="#icon-youtube"></use></svg>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text copyright__text--form">Разработано</span>
+          <a class="copyright__link copyright__link--form" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Логотип HTML Academy</span>
+            <svg width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="js/form.js"></script>
+  </body>
+</html>
