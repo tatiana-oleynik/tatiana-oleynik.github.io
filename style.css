@@ -62,7 +62,7 @@ body {
 .contacts__list,
 .education__list,
 .profiles__list {
-  width: 560px;
+  width: 280px;
   margin: 0;
   padding: 0;
   padding-top: 30px;
@@ -74,7 +74,7 @@ body {
 }
 
 .projects__list {
-  width: 1170px;
+  width: 280px;
 }
 
 .title {
@@ -102,7 +102,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
-  margin-left: 60px;
+  margin-left: 30px;
   text-align: left;
 }
 
@@ -159,4 +159,31 @@ body {
 .education__university {
   margin-right: 20px;
   line-height: 26px;
+}
+
+@media screen and (min-width: 660px) {
+  .projects__list {
+    width: 630px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .projects__list {
+    width: 1170px;
+  }
+
+  .technologies__list,
+  .contacts__list,
+  .education__list,
+  .profiles__list {
+    width: 560px;
+  }
+
+  .projects__item,
+  .technologies__item,
+  .education__item,
+  .profiles__item,
+  .contacts__item {
+    margin-left: 60px;
+  }
 }
