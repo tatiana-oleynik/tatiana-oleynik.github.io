@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 320px;
   margin: 0 auto;
 
   text-align: center;
@@ -162,12 +162,22 @@ body {
 }
 
 @media screen and (min-width: 660px) {
+  .wrapper {
+    max-width: 660px;
+    margin: 0 auto;
+  }
+
   .projects__list {
     width: 630px;
   }
 }
 
 @media screen and (min-width: 960px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .projects__list {
     width: 1170px;
   }
