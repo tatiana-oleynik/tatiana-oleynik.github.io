@@ -5,100 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>oleynik</title>
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Poppins|Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <div class="wrapper">
-    <main class="page-main">
-      <section class="introduction">
-        <p class="introduction__name">Татьяна Олейник</p>
-        <h1 class="introduction__specialization">frontend-разработчик</h1>
-      </section>
-      <div class="container">
-        <section class="projects">
-          <ul class="projects__list">
-            <li class="projects__item">
-              <h2 class="projects__title title">Мои проекты</h2>
-            </li>
-            <li class="projects__item">
-              <a class="projects__link" href="gllacy/index.html" target="_blank">Gllacy</a> — интернет-магазин по продаже мороженого. Верстка фиксированная. Раскладка сеточных элементов сделана на основе flexbox. Сайт сверстан с учетом доступности.
-            </li>
-            <li class="projects__item">
-              <a class="projects__link" href="pink/build/index.html" target="_blank">Pink</a> — сайт фотоприложения для раскрашивания серых будней. Верстка адаптивная. Графика адаптивная и ретиновая.
-            </li>
-            <li class="projects__item">
-              <a class="projects__link" href="keksobooking/index.html" target="_blank">Keksobooking</a> — сервис размещения объявлений о сдаче в аренду недвижимости в центре Токио. Чистый JavaScript без библиотек и фреймворков. Логика изменения положения маркера. Фильтр данных, полученных с севера. Отправка данных формы при помощи AJAX.
-            </li>
-            <li class="projects__item">
-              <a class="projects__link" href="minimo/index.html" target="_blank">Minimo</a> — сайт-визитка. Bootstrap, jQuery.
-            </li>
-          </ul>
-        </section>
-        <section class="technologies">
-          <ul class="technologies__list">
-            <li>
-              <h2 class="technologies__title title">Технологии</h2>
-            </li>
-            <li class="technologies__item">HTML</li>
-            <li class="technologies__item">CSS</li>
-            <li class="technologies__item">JavaScript</li>
-            <li class="technologies__item">Sass</li>
-            <li class="technologies__item">Bootstrap</li>
-            <li class="technologies__item">Git</li>
-            <li class="technologies__item">Gulp</li>
-            <li class="technologies__item">БЭМ</li>
-            <li class="technologies__item">Pixel-perfect</li>
-            <li class="technologies__item">Mobile First</li>
-            <li class="technologies__item">Адаптивная верстка</li>
-            <li class="technologies__item">Кроссбраузерная верстка</li>
-          </ul>
-        </section>
-        <section class="education">
-          <ul class="education__list">
-            <li>
-              <h2 class="technologies__title title">Образование</h2>
-            </li>
-            <li class="education__item">Онлайн-интенсивы <a class="education__link" href="https://htmlacademy.ru/" target="_blank">htmlacademy</a>
-              <ul class="education__list-courses">
-                <li class="education__item-courses">
-                  <a class="education__link-courses" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML и CSS (уровень 1), 2019</a>
-                </li>
-                <li class="education__item-courses">
-                  <a class="education__link-courses" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML и CSS, (уровень 2), 2019</a>
-                </li>
-                <li class="education__item-courses">
-                  <a class="education__link-courses" href="https://htmlacademy.ru/intensive/javascript" target="_blank">JavaScript, (уровень 1), 2019</a>
-                </li>
-              </ul>
-            </li>
-            <li class="education__item">
-              <p class="education__university">Липецкий государственный педагогический университет им. П.П. Семенова-Тян-Шанского, ЛГПУ, 2006-2011</p>
-            </li>
-          </ul>
-        </section>
-        <section class="profiles">
-          <ul class="profiles__list">
-            <li>
-              <h2 class="technologies__title title">Соц. сети</h2>
-            </li>
-            <li class="profiles__item">
-              <a class="profiles__link" href="https://github.com/tatiana-oleynik" target="_blank">Github</a>
-            </li>
-          </ul>
-        </section>
-        <section class="contacts">
-          <ul class="contacts__list">
-            <li>
-              <h2 class="technologies__title title">Контакты</h2>
-            </li>
-            <li class="contacts__item">Email: <a class="contacts__link" href="mailto:oleynik.t.v@yandex.ru">oleynik.t.v@yandex.ru</a></li>
-            <li class="contacts__item">Telegram: @tv_oleynik</li>
-            <li class="contacts__item">Skype: 8 (904) 218-11-27</li>
-          </ul>
-        </section>
+    <header class="page-header">
+      <div class="page-header__container">
+        <h1 class="page-header__specialization">Frontend Developer</h1>
+        <h2 class="page-header__name">Татьяна Олейник</h2>
       </div>
-    </main>
+      <img class="page-header__photo" src="img/photo.png" width="200" height="200">
+    </header>
+    <div class="trait"></div>
+    <section class="projects">
+      <h3 class="projects__title title">Мои проекты</h3>
+      <ul class="projects__list">
+        <li class="projects__item">
+          <a class="projects__link" href="gllacy/index.html" target="_blank">Gllacy</a> — интернет-магазин по продаже мороженого. Верстка фиксированная. Раскладка сеточных элементов сделана на основе flexbox. Сайт сверстан с учетом доступности.
+        </li>
+        <li class="projects__item">
+          <a class="projects__link" href="pink/build/index.html" target="_blank">Pink</a> — сайт фотоприложения для раскрашивания серых будней. Верстка адаптивная. Графика адаптивная и ретиновая.
+        </li>
+        <li class="projects__item">
+          <a class="projects__link" href="keksobooking/index.html" target="_blank">Keksobooking</a> — сервис размещения объявлений о сдаче в аренду недвижимости в центре Токио. Чистый JavaScript без библиотек и фреймворков. Логика изменения положения маркера. Фильтр данных, полученных с севера. Отправка данных формы при помощи AJAX.
+        </li>
+        <li class="projects__item">
+          <a class="projects__link" href="minimo/index.html" target="_blank">Minimo</a> — сайт-визитка. Bootstrap, jQuery.
+        </li>
+      </ul>
+    </section>
+    <div class="trait"></div>
+    <section class="technologies">
+      <h3 class="technologies__title title">Технологии</h2>
+      <ul class="technologies__list">
+        <li class="technologies__item">HTML</li>
+        <li class="technologies__item">CSS</li>
+        <li class="technologies__item">JavaScript</li>
+        <li class="technologies__item">Sass</li>
+        <li class="technologies__item">Bootstrap</li>
+        <li class="technologies__item">Git</li>
+        <li class="technologies__item">Gulp</li>
+        <li class="technologies__item">БЭМ</li>
+        <li class="technologies__item">Pixel-perfect</li>
+        <li class="technologies__item">Mobile First</li>
+        <li class="technologies__item">Адаптивная верстка</li>
+        <li class="technologies__item">Кроссбраузерная верстка</li>
+      </ul>
+    </section>
+    <div class="trait"></div>
+    <section class="education">
+      <h3 class="education__title title">Образование</h3>
+      <ul class="education__list">
+        <li class="education__item">Онлайн-интенсивы <a class="education__link" href="https://htmlacademy.ru/" target="_blank">htmlacademy</a>
+          <ul class="education__list-courses">
+            <li class="education__item-courses">
+              <a class="education__link-courses" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML и CSS (уровень 1), 2019</a>
+            </li>
+            <li class="education__item-courses">
+              <a class="education__link-courses" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML и CSS, (уровень 2), 2019</a>
+            </li>
+            <li class="education__item-courses">
+              <a class="education__link-courses" href="https://htmlacademy.ru/intensive/javascript" target="_blank">JavaScript, (уровень 1), 2019</a>
+            </li>
+          </ul>
+        </li>
+        <li class="education__item">
+          <p class="education__university">Липецкий государственный педагогический университет им. П.П. Семенова-Тян-Шанского, ЛГПУ, 2006-2011</p>
+        </li>
+      </ul>
+    </section>
+    <div class="trait"></div>
+    <section class="profiles">
+      <h3 class="technologies__title title">Соц. сети</h3>
+      <ul class="profiles__list">
+        <li class="profiles__item">
+          <a class="profiles__link" href="https://github.com/tatiana-oleynik" target="_blank">Github</a>
+        </li>
+      </ul>
+    </section>
+    <div class="trait"></div>
+    <section class="contacts">
+      <h3 class="technologies__title title">Контакты</h3>
+      <ul class="contacts__list">
+        <li class="contacts__item">Email: <a class="contacts__link" href="mailto:oleynik.t.v@yandex.ru">oleynik.t.v@yandex.ru</a></li>
+        <li class="contacts__item">Telegram: @tv_oleynik</li>
+        <li class="contacts__item">Skype: 8 (904) 218-11-27</li>
+      </ul>
+    </section>
   </div>
 </body>
 </html>

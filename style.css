@@ -1,45 +1,48 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Source Code Pro', monospace;
-  font-family: 'Comfortaa', cursive;
-  color: #455d58;
-
-  margin: 0;
-
-  background-color: #faf7f2;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .wrapper {
-  max-width: 320px;
+  max-width: 960px;
   margin: 0 auto;
-
-  text-align: center;
 }
 
-.introduction {
-  padding-top: 100px;
-  margin-bottom: 100px;
-}
-
-.introduction__name {
-  font-size: 30px;
-
-  margin: 0;
-  margin-bottom: 60px;
-  padding: 0;
-}
-
-.introduction__specialization {
-  font-size: 40px;
-
-  margin: 0;
-  padding: 0;
-}
-
-.container {
+.page-header {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 20px;
+  margin-bottom: 90px;
+}
+
+.page-header__specialization {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.page-header__name {
+  font-size: 35px;
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+}
+
+.page-header__photo {
+  position: absolute;
+  top: 185px;
+  left: 740px;
+}
+
+.trait {
+  width: 960px;
+  height: 2px;
+  margin-bottom: 50px;
+
+  background-color: rgb(232, 232, 232);
 }
 
 .projects,
@@ -48,74 +51,28 @@ body {
 .profiles,
 .contacts {
   display: flex;
-  margin-right: 50px;
   margin-bottom: 100px;
+  line-height: 24px;
 }
 
-.education,
-.contacts {
-  margin-right: 0;
+.title {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+
+  width: 200px;
+  margin-right: 145px;
 }
 
 .projects__list,
 .technologies__list,
-.contacts__list,
 .education__list,
-.profiles__list {
-  width: 280px;
+.profiles__list,
+.contacts__list {
+  font-size: 18px;
+  width: 600px;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
-
-  list-style: none;
-  border-radius: 30px;
-  box-shadow: 0 0 20px rgba(235, 220, 218, 1);
-}
-
-.projects__list {
-  width: 280px;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: normal;
-
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.projects__list:hover,
-.technologies__list:hover,
-.contacts__list:hover,
-.education__list:hover,
-.profiles__list:hover {
-  background: #fdf5e6;
-  transition: 1s;
-}
-
-.projects__item,
-.technologies__item,
-.education__item,
-.profiles__item,
-.contacts__item {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  text-align: left;
-}
-
-.projects__item {
-  font-weight: normal;
-  margin-right: 60px;
-  margin-bottom: 30px;
-  line-height: 26px;
-}
-
-.education__list-courses {
-  margin-top: 60px;
-  list-style: none;
 }
 
 .projects__link,
@@ -123,13 +80,13 @@ body {
 .education__link-courses,
 .profiles__link,
 .contacts__link {
-  color: #455d58;
+  color: #000000;
+  font-weight: 700;
   text-decoration: none;
-  border-bottom: 2px solid #ebdcda;
 }
 
 .projects__link {
-  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .projects__link:hover,
@@ -137,7 +94,8 @@ body {
 .education__link-courses:hover,
 .profiles__link:hover,
 .contacts__link:hover {
-  color: #b38d88;
+  color: #722F37;
+  border-bottom: 2px solid #722F37;
 }
 
 .projects__link:active,
@@ -145,55 +103,19 @@ body {
 .education__link-courses:active,
 .profiles__link:active,
 .contacts__link:active {
-  color: #cc9293;
+  color: #CD5C5C;
+  border-bottom: 2px solid #CD5C5C;
 }
 
-.education__item {
-  margin-bottom: 80px;
+.projects__item,
+.technologies__item,
+.education__item,
+.education__item-courses,
+.profiles__item,
+.contacts__item {
+  margin-bottom: 10px;
 }
 
-.education__item-courses {
-  margin-bottom: 20px;
-}
-
-.education__university {
-  margin-right: 20px;
-  line-height: 26px;
-}
-
-@media screen and (min-width: 660px) {
-  .wrapper {
-    max-width: 660px;
-    margin: 0 auto;
-  }
-
-  .projects__list {
-    width: 630px;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .projects__list {
-    width: 1170px;
-  }
-
-  .technologies__list,
-  .contacts__list,
-  .education__list,
-  .profiles__list {
-    width: 560px;
-  }
-
-  .projects__item,
-  .technologies__item,
-  .education__item,
-  .profiles__item,
-  .contacts__item {
-    margin-left: 60px;
-  }
+.education__list-courses {
+  margin-top: 10px;
 }
