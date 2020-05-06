@@ -2,75 +2,31 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.page-header {
-  position: relative;
-  display: flex;
-  margin-bottom: 90px;
+.page-header__photo {
+  display: none;
 }
 
 .page-header__specialization {
   font-family: 'Titillium Web', sans-serif;
-  font-size: 80px;
   font-weight: bold;
 
   margin: 0;
-  margin-top: 100px;
-  margin-bottom: 20px;
   padding: 0;
-}
-
-.page-header__name {
-  font-size: 35px;
-  margin: 0;
-  margin-bottom: 100px;
-  padding: 0;
-}
-
-.page-header__photo {
-  position: absolute;
-  top: 185px;
-  left: 740px;
 }
 
 .trait {
-  width: 960px;
   height: 2px;
-  margin-bottom: 50px;
-
   background-color: rgb(232, 232, 232);
 }
 
-.projects,
-.technologies,
-.education,
-.profiles,
-.contacts {
-  display: flex;
-  margin-bottom: 100px;
-  line-height: 24px;
-}
-
-.title {
-  font-size: 25px;
-  margin: 0;
-  padding: 0;
-
-  width: 200px;
-  margin-right: 145px;
-}
-
+.page-header__name,
+.title,
 .projects__list,
 .technologies__list,
 .education__list,
 .profiles__list,
-.contacts__list {
-  font-size: 18px;
-  width: 600px;
+.contacts__list,
+.education__list-courses {
   margin: 0;
   padding: 0;
 }
@@ -107,15 +63,234 @@ body {
   border-bottom: 2px solid #CD5C5C;
 }
 
-.projects__item,
-.technologies__item,
-.education__item,
-.education__item-courses,
-.profiles__item,
-.contacts__item {
-  margin-bottom: 10px;
+@media (min-width: 320px) {
+  .wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page-header {
+    margin-bottom: 40px;
+  }
+
+  .page-header__specialization {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    text-align: center;
+  }
+
+  .page-header__name {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .trait {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+
+  .projects,
+  .technologies,
+  .education,
+  .profiles,
+  .contacts {
+    margin-bottom: 30px;
+    line-height: 24px;
+  }
+
+  .technologies {
+    text-align: center;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .projects__list,
+  .technologies__list,
+  .education__list,
+  .profiles__list,
+  .contacts__list {
+    list-style: none;
+  }
+
+  .projects__item,
+  .technologies__item,
+  .education__item,
+  .education__item-courses,
+  .profiles__item,
+  .contacts__item {
+    margin-bottom: 10px;
+  }
+
+  .education__list-courses {
+    margin-left: 15px;
+    margin-top: 10px;
+    list-style: none;
+  }
 }
 
-.education__list-courses {
-  margin-top: 10px;
+@media (min-width: 660px) {
+  .wrapper {
+    max-width: 660px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .page-header__specialization  {
+    font-size: 50px;
+    margin-top: 70px;
+  }
+
+  .page-header__name {
+    margin-bottom: 50px;
+  }
+
+  .trait {
+    width: 660px;
+    margin-bottom: 40px;
+  }
+
+  .projects,
+  .technologies,
+  .education,
+  .profiles,
+  .contacts {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  .title {
+    width: 200px;
+    margin-right: 60px;
+    text-align: left;
+  }
+
+  .projects__list,
+  .technologies__list,
+  .education__list,
+  .profiles__list,
+  .contacts__list {
+    font-size: 18px;
+    width: 360px;
+    list-style-type: disc;
+  }
+
+  .technologies {
+    text-align: left;
+  }
+
+  .education__list-courses {
+    list-style-type: circle;
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: 960px) {
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .page-header {
+    position: relative;
+    display: flex;
+    margin-bottom: 90px;
+  }
+
+  .page-header__specialization {
+    font-size: 80px;
+
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .page-header__name {
+    font-size: 35px;
+    text-align: left;
+  }
+
+  .page-header__photo {
+    position: absolute;
+    display: block;
+    top: 185px;
+    left: 720px;
+  }
+
+  .trait {
+    width: 960px;
+    margin-bottom: 50px;
+  }
+
+  .projects,
+  .technologies,
+  .education,
+  .profiles,
+  .contacts {
+    margin-bottom: 100px;
+    line-height: 24px;
+  }
+
+  .title {
+    font-size: 25px;
+
+    width: 215px;
+    margin-right: 85px;
+  }
+
+  .projects__list,
+  .technologies__list,
+  .education__list,
+  .profiles__list,
+  .contacts__list {
+    font-size: 18px;
+    width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .page-header__specialization {
+    font-size: 110px;
+  }
+
+  .page-header__name {
+    font-size: 40px;
+  }
+
+  .page-header__photo {
+    top: 290px;
+    left: 850px;
+  }
+
+  .trait {
+    width: 1200px;
+  }
+
+  .title {
+    width: 240px;
+    margin-right: 100px;
+  }
+
+  .projects__list,
+  .technologies__list,
+  .education__list,
+  .profiles__list,
+  .contacts__list {
+    width: 780px;
+  }
 }
